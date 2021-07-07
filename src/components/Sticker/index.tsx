@@ -3,8 +3,8 @@ import * as S from './styles'
 import Image from 'next/image'
 
 interface StickerProps {
-  name: string,
-  description: string,
+  name: string
+  description: string
   image: string
 }
 
