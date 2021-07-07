@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "new:component": "npx hygen component new --name"
   },
   "dependencies": {
     "@types/styled-components": "^5.1.11",
