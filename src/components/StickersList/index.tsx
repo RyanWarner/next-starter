@@ -1,16 +1,16 @@
 import * as S from './styles'
-import { Sticker } from 'components'
+import Sticker from 'components/Sticker'
 import star from 'images/star.png'
 import heart from 'images/heart.png'
 
 const stickers = [
   {
-    imageUrl: star,
+    image: star.src,
     name: 'Star',
     description: 'A bright and shining object in the sky.'
   },
   {
-    imageUrl: heart,
+    image: heart.src,
     name: 'Heart',
     description: 'Full of love.'
   }

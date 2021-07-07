@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import { StickersList } from 'components'
+import StickersList from 'components/StickersList'
 
 export default function Home() {
   return (
