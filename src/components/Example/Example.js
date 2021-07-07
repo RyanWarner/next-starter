@@ -1,6 +1,5 @@
 import * as S from './styles'
-import Beef from 'components/Beef/Beef'
-import PrettyList from 'components/PrettyList/PrettyList'
+import { Beef, PrettyList } from 'components'
 
 const Example = () => {
   return (
