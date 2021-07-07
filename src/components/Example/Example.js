@@ -1,7 +1,9 @@
+import * as S from './styles'
+
 const Example = () => {
   return (
     <div>
-      <h1>Example!</h1>
+      <S.Title>Example!</S.Title>
     </div>
   )
 }
