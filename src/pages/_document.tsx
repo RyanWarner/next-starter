@@ -9,7 +9,7 @@ export default class MyDocument extends Document {
     try {
       ctx.renderPage = () =>
         originalRenderPage({
-          enhanceApp: (App) => (props) =>
+          enhanceApp: (App) => (props: any) =>
             sheet.collectStyles(<App {...props} />),
         })
 
