@@ -9,7 +9,10 @@
     "start": "next start",
     "lint": "npx ts-standard",
     "lint:fix": "npx ts-standard --fix",
-    "new:component": "npx hygen component new --name"
+    "new:component": "npx hygen component new --name",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:record": "cypress run --record"
   },
   "ts-standard": {
     "ignore": [
@@ -31,6 +34,7 @@
   "devDependencies": {
     "@types/react": "17.0.13",
     "@types/styled-components": "^5.1.11",
+    "cypress": "^7.7.0",
     "eslint": "7.30.0",
     "eslint-config-next": "11.0.1",
     "hygen": "^6.1.0",
