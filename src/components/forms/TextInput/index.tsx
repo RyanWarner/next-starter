@@ -4,10 +4,10 @@ import * as S from './styles'
 import { TextInputProps } from 'types/FormElements'
 
 const TextInput = (props: TextInputProps) => {
-  const { label, field } = props
+  const { label, field, validateOnBlur } = props
   const { fieldState, fieldApi, render, ref, userProps } = useField({ ...props })
 
-  const { value } = fieldState
+  const { value, error } = fieldState
   const { setValue, setTouched } = fieldApi
   const { onChange, onBlur, ...rest } = userProps
 
@@ -26,14 +26,20 @@ const TextInput = (props: TextInputProps) => {
           }
         }}
         onBlur={e => {
-          setTouched(true);
+          setTouched(true)
+          validateOnBlur && fieldApi.validate()
           if (onBlur) {
             onBlur(e)
           }
         }}
       />
+      {error && <S.Error>{error}</S.Error>}
     </S.TextInputComponent>
   )
+}
+
+TextInput.defaultProps = {
+  validateOnBlur: true
 }
 
 export default TextInput

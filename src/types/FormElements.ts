@@ -3,6 +3,6 @@ export interface TextInputProps {
   label?: string,
   placeholder?: string,
   required?: boolean,
-  errorMessage?: string,
-  validate?: (value: string) => string
+  validateOnBlur?: boolean,
+  validate?: (value: string) => string | void
 }
