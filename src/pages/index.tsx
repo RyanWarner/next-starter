@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { ReactElement } from 'react'
 import StickersList from 'components/StickersList'
+import StickerForm from 'components/StickerForm'
 
 export default function Home (): ReactElement {
   return (
@@ -12,6 +13,7 @@ export default function Home (): ReactElement {
       </Head>
 
       <StickersList />
+      <StickerForm />
     </div>
   )
 }
