@@ -1,5 +1,5 @@
 ---
-to: src/components/<%= name %>/<%= name %>.tsx
+to: src/components/<%= name %>/index.tsx
 ---
 import * as S from './styles'
 
