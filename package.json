@@ -11,6 +11,10 @@
     "lint:fix": "npx ts-standard --fix",
     "new:component": "npx hygen component new --name"
   },
+  "ts-standard": {
+    "ignore": ["next-env.d.ts"],
+    "globals": ["fetch", "alert"]
+  },
   "dependencies": {
     "@types/styled-components": "^5.1.11",
     "babel-plugin-styled-components": "^1.13.1",

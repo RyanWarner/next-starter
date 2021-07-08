@@ -1,3 +1,4 @@
+import { ReactElement } from 'react'
 import * as S from './styles'
 
 import Image from 'next/image'
@@ -8,7 +9,7 @@ interface StickerProps {
   image: string
 }
 
-const Sticker = ({ name, description, image }: StickerProps) => {
+const Sticker = ({ name, description, image }: StickerProps): ReactElement => {
   return (
     <S.StickerComponent>
       <Image src={image} alt={name} width='120' height='120' />
