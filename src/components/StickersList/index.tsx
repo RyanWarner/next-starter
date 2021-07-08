@@ -7,7 +7,8 @@ import stickersData from './stickersData'
 const StickersList = (): ReactElement => {
   return (
     <S.StickersListComponent>
-      <h1>Stickers</h1>
+      <h2>Example components</h2>
+      <h3>Stickers</h3>
       {stickersData.map(item =>
         <Sticker key={item.name} {...item} />
       )}
