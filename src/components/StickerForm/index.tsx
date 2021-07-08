@@ -23,6 +23,7 @@ const StickerForm = (): ReactElement => {
 
   return (
     <S.StickerFormComponent>
+      <h2>Example form</h2>
       <Form onSubmit={handleSubmit}>
         <TextInput {...nameField} />
         <button>Submit</button>
