@@ -11,9 +11,15 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-
 ## What's inside
 
 - TypeScript
 - Styled Components
 - Example components
+
+## Documentation
+
+- [TypeScript](https://www.typescriptlang.org/docs/handbook/2/basic-types.html)
+- [Cypress](https://docs.cypress.io/guides/getting-started/installing-cypress)
+- [Styled Components](https://styled-components.com/docs)
+- [Informed](https://joepuzzo.github.io/informed/?path=/story/introduction--getting-started)
