@@ -29,11 +29,6 @@ export const Input = styled.input`
     color: ${({ theme }) => theme.colors.text10};
     font-family: ${fontFamily};
   }
-
-  //@media (min-width: ${breakpoints.tablet}) {
-  //  line-height: 3.625rem; /* 58px */
-  //  height: 3.625rem; /* 58px */
-  //}
 `
 
 export const Error = styled.p`
