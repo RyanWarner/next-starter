@@ -1,5 +1,5 @@
 ---
-to: src/components/<%= name %>/styles.js
+to: src/components/<%= name %>/styles.tsx
 ---
 
 import styled from 'styled-components'
