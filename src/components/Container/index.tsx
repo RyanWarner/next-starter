@@ -3,7 +3,7 @@ import { ReactElement } from 'react'
 import * as S from './styles'
 
 interface ContainerProps {
-  children: ReactElement,
+  children: [ReactElement],
   maxWidth: string
 }
 
