@@ -1,10 +1,10 @@
-import { ReactElement } from 'react'
+import { ReactElement, FC } from 'react'
 
 import * as S from './styles'
 
 interface ContainerProps {
-  children: ReactElement,
-  maxWidth: string
+  children?: ReactElement | ReactElement[],
+  maxWidth?: string
 }
 
 const Container = ({ children, maxWidth }: ContainerProps): ReactElement => {
