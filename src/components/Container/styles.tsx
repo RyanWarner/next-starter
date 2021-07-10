@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 interface ContainerProps {
-  maxWidth: string
+  maxWidth?: string
 }
 
 const sizes: any = {
