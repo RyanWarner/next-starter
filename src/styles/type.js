@@ -1,3 +1,5 @@
+import { css } from 'styled-components'
+
 export const fontFamily = 'sans-serif'
 
 export const body10 = css`
