@@ -1,12 +1,14 @@
 import styled, { css } from 'styled-components'
 
+import { body10, fontFamily } from 'styles/type'
+
 export const TextInputComponent = styled.div`
   display: flex;
   flex-direction: column;
 `
 
 export const Input = styled.input`
-  /* ${type.body10}; */
+  ${body10};
   box-sizing: border-box;
   display: block;
   width: 100%;
@@ -16,16 +18,16 @@ export const Input = styled.input`
   border: 1px solid black;
   padding: 0.5rem 0;
   color: ${({ theme }) => theme.colors.text10};
-  /* font-family: ${theme.fontFamily}; */
+  font-family: ${fontFamily};
   transition: 0.2s;
   cursor: text;
   transition: all 0.18s ease;
   box-shadow: none;
 
   &:-webkit-autofill::first-line {
-    /* ${type.body10}; */
+    ${body10};
     color: ${({ theme }) => theme.colors.text10};
-    /* font-family: ${type.fontFamily}; */
+    font-family: ${fontFamily};
   }
 
   //@media (min-width: ${breakpoints.tablet}) {
