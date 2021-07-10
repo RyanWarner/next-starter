@@ -2,9 +2,16 @@ import { ReactElement } from 'react'
 
 import * as S from './styles'
 
-const Container = ({ children, maxWidth }: any): ReactElement => {
+interface ContainerProps {
+  children: ReactElement,
+  maxWidth: string
+}
+
+const Container = ({ children, maxWidth }: ContainerProps): ReactElement => {
   return (
-    <S.ContainerComponent maxWidth={maxWidth}>{children}</S.ContainerComponent>
+    <S.ContainerComponent maxWidth={maxWidth}>
+      {children}
+    </S.ContainerComponent>
   )
 }
 
