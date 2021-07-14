@@ -1,0 +1,24 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "workbench.colorCustomizations": {
+      "sideBar.background": "#161E25",
+      "editorRuler.foreground": "#161E25",
+      "titleBar.border": "#161E25",
+      "titleBar.activeForeground": "#fff",
+      "statusBar.background": "#161E25",
+      "statusBar.foreground": "#BAFFC5",
+      "activityBar.foreground": "#BAFFC5",
+      "activityBar.background": "#161E25",
+    },
+    "editor.tabCompletion": "on",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "javascript.validate.enable": false,
+    "standard.autoFixOnSave": true,
+  }
+}
