@@ -13,7 +13,7 @@ const nameField: TextInputProps = {
   validate: (value: string) => {
     if (!value) return 'This field is required.'
     if (value.length < 2) return 'Must be at least 2 characters.'
-  },
+  }
 }
 
 const StickerForm = (): ReactElement => {

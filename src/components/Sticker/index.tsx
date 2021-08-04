@@ -11,8 +11,8 @@ interface StickerProps {
 
 const Sticker = ({ name, description, src }: StickerProps): ReactElement => {
   return (
-    <S.StickerComponent data-testid="sticker">
-      <Image src={src} alt={name} width="120" height="120" />
+    <S.StickerComponent data-testid='sticker'>
+      <Image src={src} alt={name} width='120' height='120' />
       <S.Content>
         <S.Name>{name}</S.Name>
         <S.Description>{description}</S.Description>

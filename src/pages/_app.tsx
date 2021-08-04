@@ -6,13 +6,13 @@ import { GlobalStyle } from 'styles/global'
 import theme from 'styles/theme'
 import { DefaultSeo } from 'next-seo'
 
-function MyApp({ Component, pageProps }: AppProps): ReactElement {
+function MyApp ({ Component, pageProps }: AppProps): ReactElement {
   return (
     <ThemeProvider theme={theme}>
       <DefaultSeo
-        title="next-starter"
-        titleTemplate="%s | next-starter"
-        description="NextJS, TypeScript, Styled Components and more!"
+        title='next-starter'
+        titleTemplate='%s | next-starter'
+        description='NextJS, TypeScript, Styled Components and more!'
         openGraph={{
           type: 'website',
           locale: 'en_IE',
@@ -23,14 +23,14 @@ function MyApp({ Component, pageProps }: AppProps): ReactElement {
               url: 'https://next-starter.dev/og-image.png',
               width: 800,
               height: 600,
-              alt: 'Og Image Placeholder',
-            },
-          ],
+              alt: 'Og Image Placeholder'
+            }
+          ]
         }}
         twitter={{
           handle: '@handle',
           site: '@site',
-          cardType: 'summary_large_image',
+          cardType: 'summary_large_image'
         }}
       />
       <GlobalStyle />

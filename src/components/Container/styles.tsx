@@ -8,7 +8,7 @@ const sizes: any = {
   sm: '375px',
   md: '768px',
   lg: '1025px',
-  xl: '1200px',
+  xl: '1200px'
 }
 
 export const ContainerComponent = styled.div<ContainerProps>`
