@@ -1536,7 +1536,7 @@
     get-random-values-esm "^1.0.0"
     lodash "^4.17.21"
 
-"@sanity/cli@3.2.6", "@sanity/cli@^3.2.6":
+"@sanity/cli@3.2.6":
   version "3.2.6"
   resolved "https://registry.yarnpkg.com/@sanity/cli/-/cli-3.2.6.tgz#8aa30f50d8f3ee7ec09ed0558a43d7f621b08447"
   integrity sha512-TnTf55Cwh2mLjdEOxjU58suGdWIQWf9sy7JjVb/NwSuRvdqsg2eSBdQm3GYgRIpk27UK4ukN7Hn0ZA7l4Q4WbA==
@@ -1766,7 +1766,7 @@
     lodash "^4.17.21"
     rxjs "^7.8.0"
 
-"@sanity/vision@^3.0.0":
+"@sanity/vision@^3.2.6":
   version "3.2.6"
   resolved "https://registry.yarnpkg.com/@sanity/vision/-/vision-3.2.6.tgz#e72923fefa320ec801a22e4513c3aace6721dcba"
   integrity sha512-K4Et0VpVbD6N7w2TaKqpWgsmdab5UAe2NCn5ClneBKFb0ZLFpjN0pH/xJJ7kLJ1Mz110VqVock4k1aIpEhOAbw==
@@ -5399,7 +5399,7 @@ sanity-diff-patch@^1.0.9:
   dependencies:
     diff-match-patch "^1.0.5"
 
-sanity@^3.0.0:
+sanity@^3.2.6:
   version "3.2.6"
   resolved "https://registry.yarnpkg.com/sanity/-/sanity-3.2.6.tgz#1688fea8fa73729437967810b16f27a9412df9b5"
   integrity sha512-bwED4XFmJurfiSD7FL89FdSSEpKkkdDjTkzeodv94F1HTxhVMYlWZnt2x4x7JyOtsztnqvBU+pZ/4hiXu4S75w==
