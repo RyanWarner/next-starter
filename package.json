@@ -36,6 +36,7 @@
     "trailingComma": "none"
   },
   "devDependencies": {
+    "@sanity/cli": "^3.2.6",
     "prettier": "^2.8.3"
   }
 }
