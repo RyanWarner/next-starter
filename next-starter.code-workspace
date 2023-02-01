@@ -1,0 +1,30 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+  "settings": {
+    "workbench.colorCustomizations": {
+      "sideBar.background": "#111A20",
+      "editorRuler.foreground": "#111A20",
+      "titleBar.border": "#262A39",
+      "titleBar.activeForeground": "#BCFF66",
+      "statusBar.background": "#262A39",
+      "statusBar.foreground": "#D377DB",
+      "activityBar.foreground": "#D377DB",
+    },
+    "editor.tabCompletion": "on",
+    "eslint.validate": ["typescript"],
+    "editor.formatOnSave": true,
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "search.exclude": {
+      "**/studio/static": true
+  },
+  }
+}
