@@ -2,13 +2,12 @@ import { Box, Flex } from '@chakra-ui/react'
 import { PropsWithChildren } from 'react'
 import { Nav } from './Nav'
 import { Footer } from './Footer'
-// import { config } from 'config'
 
 interface Props extends PropsWithChildren {
   hideNav?: boolean
 }
 
-export const Layout: React.FC<Props> = ({ children, hideNav }) => {
+export const Layout = ({ children, hideNav }: Props) => {
   return (
     <Flex minH='100vh' flexDir='column'>
       {!hideNav && <Nav />}

@@ -6,7 +6,7 @@ interface Props extends LinkProps {
   children: ReactNode | ReactNode[]
 }
 
-export const Link: React.FC<Props> = ({ children, ...rest }) => {
+export const Link = ({ children, ...rest }: Props) => {
   return (
     <ChakraLink as={NextLink} {...rest}>
       {children}

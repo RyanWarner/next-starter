@@ -1,15 +1,12 @@
-import {
-  Flex,
-  Button,
-  IconButton,
-  Collapse,
-  useDisclosure,
-  Portal
-} from '@chakra-ui/react'
+import { Flex, IconButton, FlexProps } from '@chakra-ui/react'
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
-import { NavItems } from './NavItems'
 
-export const MobileNav = ({ isOpen, onToggle, ...rest }) => {
+interface Props extends FlexProps {
+  isOpen: boolean
+  onToggle: () => void
+}
+
+export const MobileNav = ({ isOpen, onToggle, ...rest }: Props) => {
   return (
     <Flex flexDir='column' {...rest}>
       <IconButton
