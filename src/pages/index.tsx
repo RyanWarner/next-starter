@@ -5,6 +5,7 @@ import { Container, Heading } from '@chakra-ui/react'
 import { sanityClient } from 'sanityClient'
 import { PostList } from 'components/PostList'
 import { Post } from 'sanity-queries/allPostsQuery'
+import { Layout } from 'components/Layout'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,12 +16,12 @@ interface Props {
 export default function Home({ posts }: Props) {
   console.log('posts', posts)
   return (
-    <main>
+    <Layout>
       <Container>
         <Heading>next-starter</Heading>
         <PostList data={posts} />
       </Container>
-    </main>
+    </Layout>
   )
 }
 
