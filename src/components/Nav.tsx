@@ -7,6 +7,7 @@ import {
   useDisclosure
 } from '@chakra-ui/react'
 import { DesktopNav } from './DesktopNav'
+import { Link } from './Link'
 import { MobileNav } from './MobileNav'
 import { NavItems } from './NavItems'
 
@@ -30,7 +31,9 @@ export const Nav = () => {
         alignItems='center'
         h={16}
       >
-        <Image src='/logo.svg' alt='Company Name' />
+        <Link href='/'>
+          <Image src='/logo.svg' alt='Company Name' />
+        </Link>
         <DesktopNav display={{ base: 'none', lg: 'flex' }} />
         <MobileNav
           isOpen={isOpen}

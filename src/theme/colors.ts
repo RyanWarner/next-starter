@@ -1,6 +1,7 @@
 export const colors = {
   green: {
-    100: '#BCFF66'
+    100: '#BCFF66',
+    200: '#A4E057'
   },
   slate: {
     100: '#262939',

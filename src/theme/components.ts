@@ -9,7 +9,13 @@ export const components: ThemeComponents = {
       },
       primary: {
         color: 'slate.100',
-        background: 'green.100'
+        background: 'green.100',
+        _hover: {
+          background: 'green.200'
+        },
+        _active: {
+          background: 'green.100'
+        }
       },
       ghost: {
         _hover: {
