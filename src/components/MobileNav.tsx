@@ -9,8 +9,7 @@ import {
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
 import { NavItems } from './NavItems'
 
-export const MobileNav = ({ ...rest }) => {
-  const { isOpen, onToggle } = useDisclosure()
+export const MobileNav = ({ isOpen, onToggle, ...rest }) => {
   return (
     <Flex flexDir='column' {...rest}>
       <IconButton
@@ -25,13 +24,6 @@ export const MobileNav = ({ ...rest }) => {
         variant={'ghost'}
         aria-label={'Toggle Navigation'}
       />
-      <Collapse in={isOpen} animateOpacity>
-        <Flex flexDir='column' w='100%' zIndex={10}>
-          <NavItems />
-          <Button variant='secondary'>Log in</Button>
-          <Button>Sign up</Button>
-        </Flex>
-      </Collapse>
     </Flex>
   )
 }

@@ -8,7 +8,7 @@ export const DesktopNav = ({ ...rest }) => {
       <Button variant='secondary' ms={4} me={4}>
         Log in
       </Button>
-      <Button>Sign up</Button>
+      <Button variant='primary'>Sign up</Button>
     </Flex>
   )
 }

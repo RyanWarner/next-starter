@@ -16,7 +16,7 @@ export const Hero = () => {
             <Heading as='h1' maxW='xl' fontSize='3rem'>
               A strong starting point for content driven websites.
             </Heading>
-            <Button mt={8} alignSelf='flex-start'>
+            <Button mt={8} alignSelf='flex-start' variant='primary'>
               Get started
             </Button>
           </Flex>

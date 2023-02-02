@@ -1,5 +1,5 @@
-import { Box, List, ListItem } from '@chakra-ui/react'
-import Link from 'next/link'
+import { Box, List, ListItem, Link } from '@chakra-ui/react'
+
 import { navItems } from 'site.config'
 
 export const NavItems = () => {
@@ -13,7 +13,12 @@ export const NavItems = () => {
         {navItems.map((item) => {
           return (
             <ListItem key={item.title}>
-              <Link href={item.url}>{item.title}</Link>
+              <Link
+                href={item.url}
+                fontSize={{ base: 'xl', lg: 'md' }}
+              >
+                {item.title}
+              </Link>
             </ListItem>
           )
         })}
