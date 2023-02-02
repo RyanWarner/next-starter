@@ -20,6 +20,9 @@ export const components: ThemeComponents = {
       ghost: {
         _hover: {
           background: 'rgba(255, 255, 255, 0.1)'
+        },
+        _active: {
+          background: 'rgba(255, 255, 255, 0.2)'
         }
       }
     }
