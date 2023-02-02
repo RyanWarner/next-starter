@@ -1,7 +1,7 @@
 import { Box, Flex } from '@chakra-ui/react'
 import { PropsWithChildren } from 'react'
 import { Nav } from './Nav'
-// import { Footer } from './Footer'
+import { Footer } from './Footer'
 // import { config } from 'config'
 
 interface Props extends PropsWithChildren {
@@ -15,7 +15,7 @@ export const Layout: React.FC<Props> = ({ children, hideNav }) => {
       <Box pt='70px' mb='auto' as='main'>
         {children}
       </Box>
-      {/* <Footer /> */}
+      <Footer />
     </Flex>
   )
 }

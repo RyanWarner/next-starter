@@ -5,7 +5,7 @@ const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET
 
 export const sanityClient = createClient({
   projectId,
-  dataset: 'production',
+  dataset,
   apiVersion: '2022-03-25',
   useCdn: false
 })
