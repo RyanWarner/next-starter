@@ -1,11 +1,11 @@
-import Head from 'next/head'
 import { Inter } from '@next/font/google'
 import { Container, Heading } from '@chakra-ui/react'
 
 import { sanityClient } from 'sanityClient'
 import { PostList } from 'components/PostList'
-import { Post } from 'sanity-queries/allPostsQuery'
+import { Post } from 'sanity-studio/queries/allPostsQuery'
 import { Layout } from 'components/Layout'
+import { Hero } from 'components/Hero'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,10 +17,8 @@ export default function Home({ posts }: Props) {
   console.log('posts', posts)
   return (
     <Layout>
-      <Container>
-        <Heading>next-starter</Heading>
-        <PostList data={posts} />
-      </Container>
+      <Hero />
+      <PostList data={posts} />
     </Layout>
   )
 }
