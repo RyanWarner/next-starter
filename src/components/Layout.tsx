@@ -11,7 +11,7 @@ export const Layout = ({ children, hideNav }: Props) => {
   return (
     <Flex minH='100vh' flexDir='column'>
       {!hideNav && <Nav />}
-      <Box pt='70px' mb='auto' as='main'>
+      <Box pt={16} mb='auto' as='main'>
         {children}
       </Box>
       <Footer />
