@@ -1,5 +1,4 @@
 import { Inter } from '@next/font/google'
-import { Container, Heading } from '@chakra-ui/react'
 
 import { sanityClient } from 'sanityClient'
 import { PostList } from 'components/PostList'
