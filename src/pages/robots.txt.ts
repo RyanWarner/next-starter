@@ -18,7 +18,6 @@ export const getServerSideProps: GetServerSideProps = async ({
   const generateDevRobots = () => {
     const robots = `User-agent: *
 Disallow: /
-Sitemap: ${sitemapUrl}
 `
 
     return robots
