@@ -1,12 +1,8 @@
-import { Inter } from '@next/font/google'
-
 import { sanityClient } from 'sanityClient'
 import { PostList } from 'components/PostList'
 import { Post } from 'sanity-studio/queries/allPostsQuery'
 import { Layout } from 'components/Layout'
 import { Hero } from 'components/Hero'
-
-const inter = Inter({ subsets: ['latin'] })
 
 interface Props {
   posts: Post[]
