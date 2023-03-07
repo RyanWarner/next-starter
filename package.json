@@ -22,7 +22,7 @@
     "@sanity/ui": "1.2.5",
     "@sanity/vision": "3.4.0",
     "framer-motion": "9.0.4",
-    "next": "^13",
+    "next": "13.2.3",
     "next-sanity": "4.1.5",
     "next-seo": "^5.15.0",
     "react": "^18",
@@ -47,8 +47,8 @@
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
     "@types/styled-components": "^5.1.26",
-    "eslint": "8.34.0",
-    "eslint-config-next": "13.1.6",
+    "eslint": "8.35.0",
+    "eslint-config-next": "13.2.3",
     "prettier": "2.8.4"
   }
 }
