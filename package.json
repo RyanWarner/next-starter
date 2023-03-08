@@ -1,7 +1,8 @@
 {
-  "name": "my-app",
+  "name": "next-starter",
   "version": "0.1.0",
   "private": true,
+  "author": "Ryan Warner <ryan@warner.codes> (https://warner.codes)",
   "scripts": {
     "dev": "next dev -- -p 9999",
     "build": "next build",
