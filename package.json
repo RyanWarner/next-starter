@@ -4,7 +4,7 @@
   "private": true,
   "author": "Ryan Warner <ryan@warner.codes> (https://warner.codes)",
   "scripts": {
-    "dev": "next dev -- -p 9999",
+    "dev": "next dev -- -p 7777",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
