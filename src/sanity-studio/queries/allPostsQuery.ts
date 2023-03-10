@@ -1,9 +1,13 @@
-export interface Post {
-  _id: string
-  slug: {
-    current: string
-  }
-  publishedAt: string
-  title: string
-  body: string[]
+import { groq } from 'next-sanity'
+
+export const allPostsQuery = groq`
+*[_type == "post" && defined(slug.current) && publishedAt < now()]{
+  title,
+  slug,
+  publishedAt
 }
+`
+
+export const allPostSlugsQuery = groq`
+*[_type == "post" && defined(slug.current) && publishedAt < now()][].slug.current
+`

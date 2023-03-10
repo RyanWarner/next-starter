@@ -5,9 +5,9 @@ import {
   ListItem,
   Heading
 } from '@chakra-ui/react'
-import { Post } from 'sanity-studio/queries/allPostsQuery'
+import { IPost } from 'sanity-studio/types/IPost'
 
-export const PostList = ({ data }: { data: Post[] }) => {
+export const PostList = ({ data }: { data: IPost[] }) => {
   return (
     <Container maxW='5xl' py={20}>
       <Heading mb={8}>Recent posts</Heading>

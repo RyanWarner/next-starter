@@ -1,22 +1,25 @@
-import { sanityClient } from 'sanityClient'
-import { PostList } from 'components/PostList'
-import { IPost } from 'sanity-studio/types/IPost'
+import { NextPage } from 'next'
+import { Heading } from '@chakra-ui/react'
 import { Layout } from 'components/Layout'
-import { Hero } from 'components/Hero'
+import { PostList } from 'components/PostList'
 import { allPostsQuery } from 'sanity-studio/queries/allPostsQuery'
+import { IPost } from 'sanity-studio/types/IPost'
+import { sanityClient } from 'sanityClient'
 
 interface Props {
   posts: IPost[]
 }
 
-export default function Home({ posts }: Props) {
+const Posts: NextPage<Props> = ({ posts }) => {
   return (
     <Layout>
-      <Hero />
+      <Heading>Posts</Heading>
       <PostList data={posts} />
     </Layout>
   )
 }
+
+export default Posts
 
 export async function getStaticProps() {
   const posts = await sanityClient.fetch(allPostsQuery)

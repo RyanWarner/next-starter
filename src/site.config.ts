@@ -14,8 +14,8 @@ interface NavItem {
 
 export const navItems: NavItem[] = [
   {
-    title: 'Blog',
-    url: '/blog'
+    title: 'Posts',
+    url: '/posts'
   },
   {
     title: 'About',
