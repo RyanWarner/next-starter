@@ -1,3 +1,5 @@
+import { TypedObject } from '@sanity/types'
+
 export interface IPost {
   _id: string
   slug: {
@@ -5,5 +7,5 @@ export interface IPost {
   }
   publishedAt: string
   title: string
-  body: string[]
+  body: TypedObject[]
 }

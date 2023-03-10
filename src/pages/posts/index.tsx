@@ -1,22 +1,15 @@
 import { NextPage } from 'next'
-import { Heading } from '@chakra-ui/react'
-import { Layout } from 'components/Layout'
-import { PostList } from 'components/PostList'
 import { allPostsQuery } from 'sanity-studio/queries/allPostsQuery'
 import { IPost } from 'sanity-studio/types/IPost'
 import { sanityClient } from 'sanityClient'
+import { PagePosts } from 'components/Pages/PagePosts'
 
 interface Props {
   posts: IPost[]
 }
 
 const Posts: NextPage<Props> = ({ posts }) => {
-  return (
-    <Layout>
-      <Heading>Posts</Heading>
-      <PostList data={posts} />
-    </Layout>
-  )
+  return <PagePosts posts={posts} />
 }
 
 export default Posts

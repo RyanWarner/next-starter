@@ -1,21 +1,14 @@
 import { sanityClient } from 'sanityClient'
-import { PostList } from 'components/PostList'
 import { IPost } from 'sanity-studio/types/IPost'
-import { Layout } from 'components/Layout'
-import { Hero } from 'components/Hero'
 import { allPostsQuery } from 'sanity-studio/queries/allPostsQuery'
+import { PageHome } from 'components/Pages/PageHome'
 
 interface Props {
   posts: IPost[]
 }
 
 export default function Home({ posts }: Props) {
-  return (
-    <Layout>
-      <Hero />
-      <PostList data={posts} />
-    </Layout>
-  )
+  return <PageHome posts={posts} />
 }
 
 export async function getStaticProps() {

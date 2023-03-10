@@ -1,22 +1,16 @@
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next'
-import { Heading } from '@chakra-ui/react'
-import { Layout } from 'components/Layout'
 import { allPostSlugsQuery } from 'sanity-studio/queries/allPostsQuery'
 import { IPost } from 'sanity-studio/types/IPost'
 import { sanityClient } from 'sanityClient'
 import { postQuery } from 'sanity-studio/queries/postQuery'
+import { PagePost } from 'components/Pages/PagePost'
 
 interface Props {
   post: IPost
 }
 
 const Post: NextPage<Props> = ({ post }) => {
-  console.log('post', post)
-  return (
-    <Layout>
-      <Heading>{post.title}</Heading>
-    </Layout>
-  )
+  return <PagePost post={post} />
 }
 
 export default Post
