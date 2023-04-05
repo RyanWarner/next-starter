@@ -5790,6 +5790,11 @@ mississippi@^4.0.0:
     stream-each "^1.1.0"
     through2 "^3.0.1"
 
+mixpanel-browser@^2.46.0:
+  version "2.46.0"
+  resolved "https://registry.yarnpkg.com/mixpanel-browser/-/mixpanel-browser-2.46.0.tgz#45cc829a432aa99bab24c0f36879001832424efd"
+  integrity sha512-qPFhAFMf5YzzGPd/sgoEl7G0N/ypJ6IaZmjkMYEPiW60i1Muo+v2Zl/dqRcCXwYfF5GvC5175muS1ZuaaYGXAQ==
+
 mkdirp-classic@^0.5.2:
   version "0.5.3"
   resolved "https://registry.npmjs.org/mkdirp-classic/-/mkdirp-classic-0.5.3.tgz"
