@@ -9,7 +9,7 @@ import {
 
 export const Hero = () => {
   return (
-    <Flex bg='slate.200' w='100%' justifyContent='center' py={28}>
+    <Flex bg='bg.200' w='100%' justifyContent='center' py={28}>
       <Container maxW='5xl'>
         <Flex w='100%' justifyContent='space-between'>
           <Flex flexDirection='column'>

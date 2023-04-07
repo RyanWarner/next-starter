@@ -4,17 +4,17 @@ export const components: ThemeComponents = {
   Button: {
     variants: {
       baseStyle: {
-        background: 'green.100',
+        background: 'brandPrimary.100',
         fontSize: 'lg' // Normally, it is "semibold"
       },
       primary: {
-        color: 'slate.100',
-        background: 'green.100',
+        color: 'bg.100',
+        background: 'brandPrimary.100',
         _hover: {
-          background: 'green.200'
+          background: 'brandPrimary.200'
         },
         _active: {
-          background: 'green.100'
+          background: 'brandPrimary.100'
         }
       },
       ghost: {

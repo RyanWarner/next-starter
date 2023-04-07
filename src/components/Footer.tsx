@@ -10,7 +10,7 @@ import { navItems, siteConfig } from 'site.config'
 
 export const Footer = () => {
   return (
-    <Flex bg='slate.200' justifyContent='center' py={10}>
+    <Flex bg='bg.200' justifyContent='center' py={10}>
       <Container maxW='5xl'>
         <Flex w='100%' justifyContent='space-between'>
           <Text>

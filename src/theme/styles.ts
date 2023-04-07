@@ -9,8 +9,8 @@ export const styles = {
       minH: '100vh',
       maxW: '100vw',
       overflowX: 'hidden',
-      color: 'cream.100',
-      bg: 'slate.100'
+      color: 'brandSecondary.100',
+      bg: 'bg.100'
     },
     'input,textarea,button,select,a': {
       WebkitTapHighlightColor: 'rgba(0, 0, 0, 0)'

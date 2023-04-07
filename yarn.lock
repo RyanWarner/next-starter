@@ -2715,13 +2715,13 @@
   dependencies:
     "@sanity/block-tools" "3.6.0"
     "@sanity/schema" "3.6.0"
-    "@sanity/slate-react" "2.30.1"
+    "@sanity/bg-react" "2.30.1"
     "@sanity/types" "3.6.0"
     "@sanity/util" "3.6.0"
     debug "^3.2.7"
     is-hotkey "^0.1.6"
     lodash "^4.17.21"
-    slate "0.81.1"
+    bg "0.81.1"
 
 "@sanity/preview-kit@^1.3":
   version "1.3.2"
@@ -2746,9 +2746,9 @@
     lodash "^4.17.21"
     object-inspect "^1.6.0"
 
-"@sanity/slate-react@2.30.1":
+"@sanity/bg-react@2.30.1":
   version "2.30.1"
-  resolved "https://registry.npmjs.org/@sanity/slate-react/-/slate-react-2.30.1.tgz"
+  resolved "https://registry.npmjs.org/@sanity/bg-react/-/bg-react-2.30.1.tgz"
   integrity sha512-Go/4QxOcIwEV4Kn33tOhzx4zEPPcE0sWXRcn7d3wrbHujSvF19L/fh7K9rHYTkBJW9C9sKuoWx6nTX7UojklWA==
   dependencies:
     "@types/is-hotkey" "^0.1.1"
@@ -6977,9 +6977,9 @@ slash@^4.0.0:
   resolved "https://registry.npmjs.org/slash/-/slash-4.0.0.tgz"
   integrity sha512-3dOsAHXXUkQTpOYcoAxLIorMTp4gIQr5IW3iVb7A7lFIp0VHhnynm9izx6TssdrIcVIESAlVjtnO2K8bg+Coew==
 
-slate@0.81.1:
+bg@0.81.1:
   version "0.81.1"
-  resolved "https://registry.npmjs.org/slate/-/slate-0.81.1.tgz"
+  resolved "https://registry.npmjs.org/bg/-/bg-0.81.1.tgz"
   integrity sha512-nmqphQb2qnlJpPMKsoxeWShpa+pOlKfy6XVdmlTuOtgWeGethM6SMPSRTrhh5UF/G+3/IoXhfbKF7o3iDZCbWw==
   dependencies:
     immer "^9.0.6"
