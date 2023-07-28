@@ -1,0 +1,26 @@
+{
+  "version": "0.2",
+  "language": "en-US",
+  "dictionaries": [
+    "wordsEn",
+    "fonts",
+    "softwareTerms"
+  ],
+  "allowCompoundWords": true,
+  "ignoreRegExpList": [
+    "\\((.+?)\\)"
+  ],
+  "ignorePaths": [
+    "node_modules",
+    ".git",
+    "packages"
+  ],
+  "words": [
+    "GTAG",
+    "gtag",
+    "ISEO",
+    "ogimage",
+    "deduped",
+    "groq"
+  ]
+}
