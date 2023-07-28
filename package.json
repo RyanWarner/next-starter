@@ -14,7 +14,7 @@
     "@chakra-ui/react": "2.8.0",
     "@emotion/react": "11.11.1",
     "@emotion/styled": "11.11.0",
-    "@portabletext/react": "2.0.2",
+    "@portabletext/react": "3.0.4",
     "@sanity/cli": "3.14.4",
     "@sanity/icons": "2.4.1",
     "@sanity/image-url": "1.0.2",
