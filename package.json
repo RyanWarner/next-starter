@@ -45,8 +45,8 @@
   "devDependencies": {
     "@sanity/eslint-config-studio": "3.0.0",
     "@types/mixpanel-browser": "^2.47.1",
-    "@types/node": "20.4.5",
-    "@types/react": "18.2.17",
+    "@types/node": "20.5.0",
+    "@types/react": "18.2.20",
     "@types/react-dom": "18.2.7",
     "@types/styled-components": "5.1.26",
     "cspell": "7.0.0",
