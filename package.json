@@ -21,7 +21,7 @@
     "@sanity/types": "3.15.1",
     "@sanity/ui": "1.7.8",
     "@sanity/vision": "3.15.1",
-    "framer-motion": "10.15.0",
+    "framer-motion": "10.16.0",
     "ga-gtag": "^1.1.7",
     "mixpanel-browser": "2.47.0",
     "next": "13.4.12",
