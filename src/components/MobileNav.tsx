@@ -18,8 +18,9 @@ export const MobileNav = ({ isOpen, onToggle, ...rest }: Props) => {
             <HamburgerIcon w={5} h={5} />
           )
         }
-        variant={'ghost'}
-        aria-label={'Toggle Navigation'}
+        variant='ghost'
+        aria-label='Toggle Navigation'
+        color='text.100'
       />
     </Flex>
   )
