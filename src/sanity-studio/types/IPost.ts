@@ -8,4 +8,7 @@ export interface IPost {
   publishedAt: string
   title: string
   body: TypedObject[]
+  author: {
+    name: string
+  }
 }

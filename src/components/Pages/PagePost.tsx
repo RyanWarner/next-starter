@@ -9,15 +9,21 @@ import { PortableText } from '@portabletext/react'
 import { Layout } from 'components/Layout'
 import { Link } from 'components/Link'
 import { portableTextComponents } from 'components/PortableText/components'
+import dayjs from 'dayjs'
+import advancedFormat from 'dayjs/plugin/advancedFormat'
+import localizedFormat from 'dayjs/plugin/localizedFormat'
 import { IPost } from 'sanity-studio/types/IPost'
 
+dayjs.extend(advancedFormat)
+dayjs.extend(localizedFormat)
 interface Props {
   post: IPost
 }
 
 export const PagePost = ({ post }: Props) => {
   console.log(post)
-  const url = `/news/${post?.slug.current}`
+  const url = `/posts/${post?.slug.current}`
+  const date = dayjs(post?.publishedAt).format('llll')
   return (
     <Layout>
       <Container py={[8, 10, 20]} maxW='2xl' as='article'>
@@ -31,11 +37,11 @@ export const PagePost = ({ post }: Props) => {
           mb={5}
           color='text.200'
         >
-          Published on August 31, 2023
+          Published on {date}
         </Text>
         <Flex alignItems='center' mb={10}>
           <Image
-            src=''
+            src={post.author.image.url}
             alt=''
             w={10}
             h={10}
@@ -44,8 +50,10 @@ export const PagePost = ({ post }: Props) => {
             me={2}
           />
           <Flex flexDir='column'>
-            <Text>Author Name</Text>
-            <Link href='https://www.threads.net/'>@handle</Link>
+            <Text fontSize='sm'>{post.author.name}</Text>
+            <Link fontSize='sm' href='https://www.threads.net/'>
+              @handle
+            </Link>
           </Flex>
         </Flex>
         <PortableText
