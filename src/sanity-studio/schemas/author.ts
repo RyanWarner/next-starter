@@ -1,4 +1,4 @@
-import {defineField, defineType} from 'sanity'
+import { defineField, defineType } from 'sanity'
 
 export default defineType({
   name: 'author',
@@ -8,7 +8,7 @@ export default defineType({
     defineField({
       name: 'name',
       title: 'Name',
-      type: 'string',
+      type: 'string'
     }),
     defineField({
       name: 'slug',
@@ -16,16 +16,16 @@ export default defineType({
       type: 'slug',
       options: {
         source: 'name',
-        maxLength: 96,
-      },
+        maxLength: 96
+      }
     }),
     defineField({
       name: 'image',
       title: 'Image',
       type: 'image',
       options: {
-        hotspot: true,
-      },
+        hotspot: true
+      }
     }),
     defineField({
       name: 'bio',
@@ -35,16 +35,26 @@ export default defineType({
         {
           title: 'Block',
           type: 'block',
-          styles: [{title: 'Normal', value: 'normal'}],
-          lists: [],
-        },
-      ],
+          styles: [{ title: 'Normal', value: 'normal' }],
+          lists: []
+        }
+      ]
     }),
+    defineField({
+      name: 'instagram',
+      title: 'Instagram',
+      type: 'string'
+    }),
+    defineField({
+      name: 'twitter',
+      title: 'Twitter',
+      type: 'string'
+    })
   ],
   preview: {
     select: {
       title: 'name',
-      media: 'image',
-    },
-  },
+      media: 'image'
+    }
+  }
 })
