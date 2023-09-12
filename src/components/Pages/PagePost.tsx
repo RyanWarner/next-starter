@@ -16,9 +16,11 @@ interface Props {
 }
 
 export const PagePost = ({ post }: Props) => {
+  console.log(post)
+  const url = `/news/${post?.slug.current}`
   return (
     <Layout>
-      <Container py={[8, 10, 20]} maxW='2xl'>
+      <Container py={[8, 10, 20]} maxW='2xl' as='article'>
         <Heading as='h1' mb={5}>
           {post.title}
         </Heading>
@@ -43,7 +45,7 @@ export const PagePost = ({ post }: Props) => {
           />
           <Flex flexDir='column'>
             <Text>Author Name</Text>
-            <Link href='https://x.com'>@handle</Link>
+            <Link href='https://www.threads.net/'>@handle</Link>
           </Flex>
         </Flex>
         <PortableText
