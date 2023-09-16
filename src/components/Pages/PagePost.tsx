@@ -24,6 +24,8 @@ export const PagePost = ({ post }: Props) => {
   console.log(post)
   const url = `/posts/${post?.slug.current}`
   const date = dayjs(post?.publishedAt).format('llll')
+  const twitterLink = `https://www.x.com/${post.author.twitter}`
+  const handle = `@${post.author.twitter}`
   return (
     <Layout>
       <Container py={[8, 10, 20]} maxW='2xl' as='article'>
@@ -51,8 +53,8 @@ export const PagePost = ({ post }: Props) => {
           />
           <Flex flexDir='column'>
             <Text fontSize='sm'>{post.author.name}</Text>
-            <Link fontSize='sm' href='https://www.threads.net/'>
-              @handle
+            <Link fontSize='sm' href={twitterLink}>
+              {handle}
             </Link>
           </Flex>
         </Flex>
