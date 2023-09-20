@@ -3,7 +3,7 @@ import { Heading2 } from './Heading2'
 import { bullet, ListBullet, ListNumber, number } from './Lists'
 import { Normal } from './Normal'
 
-export const components: PortableTextComponents = {
+export const portableTextComponents: PortableTextComponents = {
   block: {
     normal: Normal,
     h2: Heading2
