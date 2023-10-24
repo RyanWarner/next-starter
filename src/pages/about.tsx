@@ -1,12 +1,12 @@
 import { Heading } from '@chakra-ui/react'
-
-import { sanityClient } from 'sanityClient'
 import { Layout } from 'components/Layout'
 
-export default function About() {
+const About = () => {
   return (
     <Layout>
       <Heading>About</Heading>
     </Layout>
   )
 }
+
+export default About
